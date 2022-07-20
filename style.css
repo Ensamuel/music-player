@@ -1,0 +1,74 @@
+*{
+    background: linear-gradient(to left, pink, white);
+    font-family: sans-serif;
+}
+
+.music-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.container{
+    display: flex;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.6);
+    align-items: center;
+    padding: 10px;
+    margin: 50px;
+    width: 300px;
+    height: 100px;
+}
+
+.container p{
+    position: absolute;
+    opacity: .5;
+    padding-top: 50px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.image-container{
+    position: relative;
+    width: 100px;
+    
+}
+
+
+.image-container img{
+    border-radius: 100%;
+    width: inherit;
+    position: absolute;
+    height: 100px;
+    bottom: 0;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.image-container img.play{
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.navigation {
+    padding: 10px;
+    outline: none;
+    margin: 25px;
+    
+}
+
+.navigation button{
+    margin: 5px;
+    cursor: pointer;
+    padding-top: 10px;
+}
